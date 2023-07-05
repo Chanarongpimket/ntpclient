@@ -1,0 +1,17 @@
+   Name: ntp.ku.ac.th Address: 158.108.212.149
+Name: fw.eng.ku.ac.th Address: 158.108.32.17
+Name: ilm.live.rmutt.ac.th Address: 203.158.118.3
+   Name: time.uni.net.th Address: 202.28.18.72
+Name: itoml.live.rmutt.ac.th Address: 203.158.111.32 Address: 158.108.7.157 Address: 158.108.2.100
+
+
+อันนี้เป็นรายชื่อ Server ที่รู้จัก แต่ไม่ได้อยู่ใน Pool
+Name: delta.cpe.ku.ac.th Address: 158.108.32.3
+Name: time.navy.mi.th Address: 118.175.67.83
+  Name: clock.nectec.or.th Address: 202.44.204.114
+  Name: time1.nimt.or.th Address: 203.185.69.60
+  Name: time2.nimt.or.th Address: 203.185.69.59
+Name: time3.nimt.or.th Address: 203.185.69.56
+
+มีทั้งหมด 11 server ที่ใช้งานได้คือที่เว้นวรรคไว้
+

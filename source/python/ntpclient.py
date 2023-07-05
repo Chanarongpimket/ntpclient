@@ -13,13 +13,13 @@ import sys
 import socket
 import struct, time # To unpack the packet sent back and to convert the seconds to a string.
 
-host = "pool.ntp.org"; # The server.
+host = "ntp.ku.ac.th"; # The server.
 port = 123; # Port.
 read_buffer = 1024; # The size of the buffer to read in the received UDP packet.
-address = ( host, port ); # Tuple needed by sendto.
-data = '\x1b' + 47 * '\0'; # Hex message to send to the server.
+address = ( host , port ); # Tuple needed by sendto.
+data = b'\x1b' + 47 * b'\0'; # Hex message to send to the server.
 
-epoch = 2208988800L; # Time in seconds since Jan, 1970 for UNIX epoch.
+epoch = 2208988800; # Time in seconds since Jan, 1970 for UNIX epoch.
 
 client = socket.socket( AF_INET, SOCK_DGRAM ); # Internet, UDP
 
@@ -31,4 +31,8 @@ t = struct.unpack( "!12I", data )[ 10 ]; # Unpack the binary data and get the se
 
 t -= epoch; # Calculate seconds since the epoch.
 
-print "Time = %s" % time.ctime( t ); # Print the seconds as a formatted string.
+# print "Time = %s" % time.ctime( t ); # Print the seconds as a formatted string.
+print(f"Time = {time.ctime(t)}")
+print("Address = ",address)
+
+
